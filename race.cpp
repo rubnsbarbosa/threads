@@ -8,7 +8,6 @@ unsigned long int shared = 0;
 
 void *threadCode(void *)
 {
-    //int aux = 1;
     for (int x = 0; x < 10000000; x++)
     {
         shared = shared + 1;
