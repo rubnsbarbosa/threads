@@ -129,7 +129,7 @@ warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
 1 warning generated.
 ```
 
-If we have a look at [semaphore.h](https://github.com/swiftlang/swift-corelibs-libdispatch/blob/main/dispatch/semaphore.h) we will see that we need to `#include <dispatch/dispatch.h>` instead of `semaphore.h` Therefore, let's use Dispatch Semaphore Synchronization in macOS with C++ which is part of the Grand Central Dispatch (GCD) framework.
+If we have a look at [semaphore.h](https://github.com/swiftlang/swift-corelibs-libdispatch/blob/main/dispatch/semaphore.h) we will see that we need to `#include <dispatch/dispatch.h>` instead of `semaphore.h` Therefore, let's use Dispatch Semaphore Synchronization on macOS using C++ which is part of the Grand Central Dispatch (GCD) framework.
 
 ```cpp
 #include <dispatch/dispatch.h>
@@ -189,6 +189,7 @@ wait result: 0
 signal result: 1
 wait result: 0
 signal result: 1
+...
 ```
 
 This way we achieve thread synchronization using dispatch semaphore.
