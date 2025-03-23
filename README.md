@@ -164,7 +164,7 @@ shared resource: 50000000
 * `dispatch_semaphore_wait()` a function that decrements semaphore value.
 * `dispatch_semaphore_signal()` a function that increments semaphore value.
 
-if we'd like to double check we can change like below
+if we'd like to double check we can change it like below
 
 ```cpp
 int waitResult, signalResult;
