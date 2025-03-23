@@ -1,6 +1,6 @@
 # Threads
 
-OS's thread scheduling decisions are made by the kernel itself. Therefore, thread execution is nondeterministic and can lead to some issues. This project highlights the race conditions issue with threads from the nondeterministic timing of execution. Then demonstrates how to handle to handle race conditions with mutex and dispatch semaphores in C++ on macOS to control access to a shared resource among multiple concurrent threads. 
+OS's thread scheduling decisions are made by the kernel itself. Therefore, thread execution is nondeterministic and can lead to some issues. This project highlights the race conditions issue with threads from the nondeterministic timing of execution. Then demonstrates how to handle race conditions with mutex and dispatch semaphores in C++ on macOS to control access to a shared resource among multiple concurrent threads. 
 
 ## Compile the codes
 
